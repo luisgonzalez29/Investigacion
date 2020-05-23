@@ -6,22 +6,7 @@ class Card extends React.PureComponent {
   render() {
     return (
       <TouchableOpacity>
-        <View style={styles.card}>
-          <View style={styles.left}>
-            <MaterialInitials
-              style={{ alignSelf: "center" }}
-              backgroundColor={"#1f6dff"}
-              color={"white"}
-              size={100}
-              text={"John Doe"}
-              single={false}
-            />
-          </View>
-          <View style={styles.right}>
-            <Text style={styles.card_title}> NO SE VE</Text>
-            <Text>Correo xd</Text>
-          </View>
-        </View>
+        <View style={styles.card}/>
       </TouchableOpacity>
     );
   }
