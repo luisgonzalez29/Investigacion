@@ -13,6 +13,8 @@ import { Header, Image } from "native-base";
 
 class Home extends React.PureComponent {
   render() {
+    // const { navigation } = this.props;
+    // const {navigate} = navigation;
     return (
       <SafeAreaView style={styles.container}>
         <StatusBar backgroundColor={"#f4f6f6"}/>
@@ -28,7 +30,9 @@ class Home extends React.PureComponent {
           style={styles.body}
           bounces={false}
         >
-          <TouchableOpacity>
+          <TouchableOpacity 
+          // onPress={()=>navigation.navigate("Profile")}
+          >
             <Card
               name={"Luis Gonzalez"}
               Styles={{ marginTop: 10 }}
@@ -72,7 +76,6 @@ class Home extends React.PureComponent {
           <TouchableOpacity>
             <Card
               name={"Luis Togges"}
-              Styles={{ marginTop: 10 }}
               Size={100}
               backgroundcolor={"grey"}
               Color={"white"}
