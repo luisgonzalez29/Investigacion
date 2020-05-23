@@ -62,9 +62,9 @@ class Forum extends React.PureComponent {
           <Comment
             name={"Tony Zhu"} //tony siempre va a ser el que comenta xddd
             Size={50}
-            backgroundcolor={"black"}
+            backgroundcolor={"#dfd89b"}
             Color={"white"}
-            Subtitle={"Togges se la come"} //pasale el comentario que generas con el input de arriba
+            Subtitle={"Debe estar mas pendiente de sus tareas"} //pasale el comentario que generas con el input de arriba
           />
         </View>
       </SafeAreaView>
