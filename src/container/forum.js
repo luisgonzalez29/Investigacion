@@ -45,6 +45,7 @@ class Forum extends React.PureComponent {
             Luis Gonzalez
             {/* aqui tienes que pasarle el nombre de la pantalla de inicio */}
           </Text>
+          <View style={styles.underLine}/>
         </View>
         <View style={styles.newComment}>
           <View style={styles.cardHeader}>
@@ -73,6 +74,14 @@ class Forum extends React.PureComponent {
 }
 
 const styles = StyleSheet.create({
+  underLine:{
+    borderBottomColor:"#e6efff",
+    borderBottomWidth:3,
+    marginTop:5,
+    width:"50%",
+    height:1,
+    alignSelf:"center"
+  },
   subCard: {
     backgroundColor: "#d5e1f1",
     marginTop: 10,

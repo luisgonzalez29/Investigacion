@@ -44,14 +44,15 @@ class Profile extends React.PureComponent {
           <Text style={styles.name}>
             Luis Gonzalez
             {/* aqui tienes que pasarle el nombre de la pantalla de inicio */}
-            </Text> 
+          </Text> 
+          <View style={styles.underLine}/>
         </View>
         <Form
           //este se explica solo, creo xd
           name={"Luis Alejandro Gonzalez Rudas"}
           Email={"luis.gonzalez2999@gmail.com"}
           location={"Veranillo Sector 18"}
-          Street={"Calle 19, Casa A2"}
+          Ocupation={"Estudiante"}
           Phone={"+507 6921-6122"}
           WebSite={"..."}
         />
@@ -69,6 +70,14 @@ class Profile extends React.PureComponent {
 }
 
 const styles = StyleSheet.create({
+  underLine:{
+    borderBottomColor:"#e6efff",
+    borderBottomWidth:3,
+    marginTop:5,
+    width:"50%",
+    height:1,
+    alignSelf:"center"
+  },
   container: {
     width: "100%",
     backgroundColor: "#f4f6f6",
@@ -101,7 +110,7 @@ const styles = StyleSheet.create({
     width:"100%",
     height:"100%",
     borderRadius:50,
-    backgroundColor:"black",
+    backgroundColor:"#7aa9ff",
     alignSelf:"center",
     justifyContent:"center",
     alignContent:"center",
@@ -110,7 +119,7 @@ const styles = StyleSheet.create({
   },
   ButtonText:{
     justifyContent:"center",
-    color:"white",
+    color:"black",
     textAlign:"center",
     textAlignVertical:"center",
     fontSize:18,

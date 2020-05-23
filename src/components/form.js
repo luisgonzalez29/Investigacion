@@ -3,7 +3,7 @@ import { StyleSheet, TouchableOpacity, View, Text } from "react-native";
 import MaterialInitials from "react-native-material-initials/native";
 import { ScrollView } from "react-native-gesture-handler";
 
-const Form = ({ name, Email, location, Street, Phone, WebSite }) => {
+const Form = ({ name, Email, location, Ocupation, Phone, WebSite }) => {
   return (
     <ScrollView>
       <View style={styles.card}>
@@ -29,21 +29,21 @@ const Form = ({ name, Email, location, Street, Phone, WebSite }) => {
         </View>
         <View style={styles.row}>
           <View style={styles.card_left}>
-            <Text style={styles.card_title}>Direccion:</Text>
+            <Text style={styles.card_title}>Ocupación:</Text>
           </View>
           <View style={styles.card_right}>
             <Text numberOfLines={2} style={styles.categoryMid}>
-              {location}
+              {Ocupation}
             </Text>
           </View>
         </View>
         <View style={styles.row}>
           <View style={styles.card_left}>
-            <Text style={styles.card_title}>Calle:</Text>
+            <Text style={styles.card_title}>Direccion:</Text>
           </View>
           <View style={styles.card_right}>
             <Text numberOfLines={2} style={styles.categoryMid}>
-              {Street}
+              {location}
             </Text>
           </View>
         </View>
@@ -89,9 +89,13 @@ const styles = StyleSheet.create({
   },
   card_right: {
     width: "65%",
-    height: "100%",
+    height: "70%",
     justifyContent: "center",
     flexDirection: "column",
+    backgroundColor:"#d5e1f1",
+    alignSelf:"center",
+    paddingLeft:10,
+    borderRadius:10
   },
   category: {
     textAlign: "left",
