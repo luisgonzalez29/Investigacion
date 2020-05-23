@@ -8,6 +8,7 @@ import {
   Text,
   StatusBar,
 } from "react-native";
+import Card from '../components/cards'
 import { Header, Image } from "native-base";
 
 class Home extends React.PureComponent {
@@ -26,13 +27,7 @@ class Home extends React.PureComponent {
           </View>
         </Header>
         <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.body}>
-          
-            <TouchableOpacity>
-              <View style={{width:"90%", height:150,backgroundColor:"#dee4e4", marginVertical:10, alignSelf:"center"}}>
-
-              </View>
-            </TouchableOpacity>
-          
+          <Card></Card>
           </ScrollView>
       </SafeAreaView>
     );
