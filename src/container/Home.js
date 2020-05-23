@@ -15,6 +15,7 @@ class Home extends React.PureComponent {
   render() {
     return (
       <SafeAreaView style={styles.container}>
+        <StatusBar backgroundColor={"#f4f6f6"}/>
         <Header style={styles.header}>
           <View style={styles.left}>{/* <Image/> */}</View>
           <View style={styles.middle}>
@@ -25,6 +26,7 @@ class Home extends React.PureComponent {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.body}
+          bounces={false}
         >
           <TouchableOpacity>
             <Card
@@ -76,6 +78,7 @@ class Home extends React.PureComponent {
               Color={"white"}
             />
           </TouchableOpacity>
+          <View style={{height:60}}/>
         </ScrollView>
       </SafeAreaView>
     );

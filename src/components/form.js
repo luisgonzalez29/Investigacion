@@ -1,8 +1,7 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity, View, Text } from "react-native";
-import MaterialInitials from "react-native-material-initials/native";
 
-const Card = ({
+const Form = ({
   Color,
   Size,
   Styles,
@@ -36,7 +35,7 @@ const Card = ({
 const styles = StyleSheet.create({
   card: {
     width: "90%",
-    height: 150,
+    height: 1000,
     backgroundColor: "#e6efff",
     marginVertical: 15,
     alignSelf: "center",
@@ -71,4 +70,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Card;
+export default Form;
