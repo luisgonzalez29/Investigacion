@@ -2,16 +2,34 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, View, Text } from "react-native";
 import MaterialInitials from "react-native-material-initials/native";
 
-class Card extends React.PureComponent {
-  render() {
-    return (
-      <TouchableOpacity>
-        <View style={styles.card}/>
-      </TouchableOpacity>
-    );
-  }
-}
-
+const Card = ({
+  Color,
+  Size,
+  Styles,
+  backgroundcolor,
+  name,
+  Email,
+  Subtitle,
+}) => {
+  return (
+    <View style={styles.card}>
+      <View style={styles.card_left}>
+        <MaterialInitials
+          style={[Styles, {alignSelf:"center"}]}
+          backgroundColor={backgroundcolor}
+          color={Color}
+          size={Size}
+          text={name}
+          single={false}
+        />
+      </View>
+      <View style={styles.card_right}>
+        <Text style={styles.card_title}>{name}</Text>
+        <Text style={styles.card_subtitle}>{Subtitle}</Text> 
+      </View>
+    </View>
+  );
+};
 const styles = StyleSheet.create({
   card: {
     width: "90%",
@@ -20,20 +38,33 @@ const styles = StyleSheet.create({
     marginVertical: 15,
     alignSelf: "center",
     borderRadius: 25,
+    flexDirection:"row"
   },
-  left: {
+  card_left: {
     width: "35%",
     height: "100%",
     justifyContent: "center",
   },
-  right: {
+  card_right: {
     width: "65%",
     height: "100%",
     justifyContent: "center",
+    flexDirection: "column",
   },
   card_title: {
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: "bold",
+    textAlign: "left",
+    color:"black",
+    bottom:10,
+    marginLeft:5
+  },
+  card_subtitle: {
+    fontSize: 15,
+    fontStyle: "italic",
+    color: "#A1A1A1",
+    textAlign: "left",
+    marginLeft:5
   },
 });
 
