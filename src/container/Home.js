@@ -8,7 +8,7 @@ import {
   Text,
   StatusBar,
 } from "react-native";
-import Card from "../components/cards";
+import Card from "../components/Cards";
 import { Header, Image } from "native-base";
 
 class Home extends React.PureComponent {
@@ -50,7 +50,7 @@ class Home extends React.PureComponent {
               Size={100}
               backgroundcolor={"#7a7dff"}
               Color={"white"}
-              title={"Ola"}
+              Subtitle={"delon.1299@gmail.com"}
             />
           </TouchableOpacity>
           <TouchableOpacity>
@@ -60,7 +60,7 @@ class Home extends React.PureComponent {
               Size={100}
               backgroundcolor={"#a1e495"}
               Color={"white"}
-              title={"Ola"}
+              Subtitle={"akatsuki507@gmail.com"}
             />
           </TouchableOpacity>
           <TouchableOpacity>
@@ -70,7 +70,7 @@ class Home extends React.PureComponent {
               Size={100}
               backgroundcolor={"#dfd89b"}
               Color={"white"}
-              title={"Ola"}
+              Subtitle={"tonyz27@gmail.com"}
             />
           </TouchableOpacity>
           <TouchableOpacity>
@@ -79,6 +79,8 @@ class Home extends React.PureComponent {
               Size={100}
               backgroundcolor={"grey"}
               Color={"white"}
+              Subtitle={"kingbobomb@gmail.com"}
+
             />
           </TouchableOpacity>
           <View style={{height:60}}/>
