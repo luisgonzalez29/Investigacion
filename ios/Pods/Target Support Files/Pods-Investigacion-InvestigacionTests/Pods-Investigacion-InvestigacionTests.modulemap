@@ -1,0 +1,6 @@
+module Pods_Investigacion_InvestigacionTests {
+  umbrella header "Pods-Investigacion-InvestigacionTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
