@@ -15,7 +15,6 @@ import MaterialInitials from "react-native-material-initials/native";
 
 class Forum extends React.PureComponent {
   render() {
-
     return (
       <SafeAreaView style={styles.container}>
         <StatusBar backgroundColor={"#f4f6f6"} />
@@ -36,7 +35,7 @@ class Forum extends React.PureComponent {
         <View style={styles.photoContainer}>
           <MaterialInitials
             style={styles.picture}
-            backgroundColor={"grey"} //aqui tienes que pasarle el color de fondo de la pantalla de inicio
+            backgroundColor={"#d5e1f1"} //aqui tienes que pasarle el color de fondo de la pantalla de inicio
             color={"black"} //aqui tienes que pasarle el color del texto de la pantalla de inicio
             size={100}
             text={"Luis Gonzalez"} //aqui tienes que pasarle el nombre de la pantalla de inicio
@@ -52,7 +51,7 @@ class Forum extends React.PureComponent {
             <Text style={styles.commentTitle}>Nuevo comentario:</Text>
           </View>
           <View style={styles.cardInput}>
-            <Input style={styles.Input}/>
+            <Input style={styles.Input} />
           </View>
         </View>
         <Comment
@@ -97,7 +96,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 20,
     paddingLeft: 10,
-    color:"grey"
+    color: "grey",
   },
   commentTitle: {
     fontSize: 20,
