@@ -1,60 +1,55 @@
 import React from "react";
-import {
-  StyleSheet,
-  TouchableOpacity,
-  View,
-  Text,
-} from "react-native";
+import { StyleSheet, TouchableOpacity, View, Text } from "react-native";
+import MaterialInitials from "react-native-material-initials/native";
 
 class Card extends React.PureComponent {
   render() {
     return (
-        <TouchableOpacity>
-        <View style={{width:"90%", height:150,backgroundColor:"#e6efff", marginVertical:15, alignSelf:"center", borderRadius:25}}>
+      <TouchableOpacity>
+        <View style={styles.card}>
+          <View style={styles.left}>
+            <MaterialInitials
+              style={{ alignSelf: "center" }}
+              backgroundColor={"#1f6dff"}
+              color={"white"}
+              size={100}
+              text={"John Doe"}
+              single={false}
+            />
+          </View>
+          <View style={styles.right}>
+            <Text style={styles.card_title}> NO SE VE</Text>
+            <Text>Correo xd</Text>
+          </View>
         </View>
-        </TouchableOpacity>        
+      </TouchableOpacity>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container:{
-    width:"100%",
-    backgroundColor:"#f4f6f6"
+  card: {
+    width: "90%",
+    height: 150,
+    backgroundColor: "#e6efff",
+    marginVertical: 15,
+    alignSelf: "center",
+    borderRadius: 25,
   },
-  header:{
-    width:"100%",
-    alignSelf:"center",
-    backgroundColor:"#f4f6f6",
-    borderBottomWidth:0
+  left: {
+    width: "35%",
+    height: "100%",
+    justifyContent: "center",
   },
-  header_title: {
+  right: {
+    width: "65%",
+    height: "100%",
+    justifyContent: "center",
+  },
+  card_title: {
     fontSize: 20,
     fontWeight: "bold",
-    alignSelf:"center",
-    height:"100%"
   },
-  left:{
-    width:"20%",
-    height:"100%",
-    justifyContent:"center"
-  },
-  middle:{
-    width:"60%",
-    height:"100%",
-    justifyContent:"center"
-  },
-  right:{
-    width:"20%",
-    height:"100%",
-    justifyContent:"center"
-  },
-  body:{
-    backgroundColor:"white"
-  }
 });
 
 export default Card;
-
-
-
