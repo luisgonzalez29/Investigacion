@@ -27,7 +27,9 @@ class Home extends React.PureComponent {
           </View>
         </Header>
         <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.body}>
-          <Card></Card>
+          <Card>
+            
+          </Card>
           </ScrollView>
       </SafeAreaView>
     );
