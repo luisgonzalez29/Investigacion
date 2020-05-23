@@ -20,11 +20,11 @@ class Profile extends React.PureComponent {
         <StatusBar backgroundColor={"#f4f6f6"} />
         <Header style={styles.header}>
           <View style={styles.left}>
-            <TouchableOpacity>
-              {/* <Image
-                style={styles.backIcon}
+          <TouchableOpacity style={{width:"100%", height:"100%", top:2}}>
+              <Image
+                style={{height:"55%", width:30, alignSelf:"center"}}
                 source={require("../assets/icons/back.png")}
-              /> */}
+              />
             </TouchableOpacity>
           </View>
           <View style={styles.middle}>
@@ -35,7 +35,7 @@ class Profile extends React.PureComponent {
         <View style={styles.photoContainer}>
           <MaterialInitials
             style={styles.picture}
-            backgroundColor={"grey"} //aqui tienes que pasarle el color de fondo de la pantalla de inicio
+            backgroundColor={"#7aa9ff"} //aqui tienes que pasarle el color de fondo de la pantalla de inicio
             color={"black"} //aqui tienes que pasarle el color del texto de la pantalla de inicio
             size={100}
             text={"Luis Gonzalez"} //aqui tienes que pasarle el nombre de la pantalla de inicio
@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     backgroundColor: "#f4f6f6",
     borderBottomWidth: 0,
+    marginBottom:10
   },
   header_title: {
     fontSize: 20,

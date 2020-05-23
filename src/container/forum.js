@@ -20,11 +20,11 @@ class Forum extends React.PureComponent {
         <StatusBar backgroundColor={"#f4f6f6"} />
         <Header style={styles.header}>
           <View style={styles.left}>
-            <TouchableOpacity>
-              {/* <Image
-                style={styles.backIcon}
+            <TouchableOpacity style={{ width: "100%", height: "100%", top:2 }}>
+              <Image
+                style={{ height: "55%", width: 30, alignSelf: "center" }}
                 source={require("../assets/icons/back.png")}
-              /> */}
+              />
             </TouchableOpacity>
           </View>
           <View style={styles.middle}>
@@ -35,7 +35,7 @@ class Forum extends React.PureComponent {
         <View style={styles.photoContainer}>
           <MaterialInitials
             style={styles.picture}
-            backgroundColor={"#d5e1f1"} //aqui tienes que pasarle el color de fondo de la pantalla de inicio
+            backgroundColor={"#7aa9ff"} //aqui tienes que pasarle el color de fondo de la pantalla de inicio
             color={"black"} //aqui tienes que pasarle el color del texto de la pantalla de inicio
             size={100}
             text={"Luis Gonzalez"} //aqui tienes que pasarle el nombre de la pantalla de inicio
@@ -51,22 +51,44 @@ class Forum extends React.PureComponent {
             <Text style={styles.commentTitle}>Nuevo comentario:</Text>
           </View>
           <View style={styles.cardInput}>
-            <Input style={styles.Input} />
+            <Input style={styles.Input} placeholder={"Comente aqui..."} />
+            <TouchableOpacity style={styles.send}>
+              <Text style={styles.sendButton}>Enviar</Text>
+            </TouchableOpacity>
           </View>
         </View>
-        <Comment
-          name={"Tony Zhu"} //tony siempre va a ser el que comenta xddd
-          Size={50}
-          backgroundcolor={"black"}
-          Color={"white"}
-          Subtitle={"Ola"}
-        />
+        <View style={styles.subCard}>
+          <Text style={styles.h2}> Comentario reciente:</Text>
+          <Comment
+            name={"Tony Zhu"} //tony siempre va a ser el que comenta xddd
+            Size={50}
+            backgroundcolor={"black"}
+            Color={"white"}
+            Subtitle={"Togges se la come"} //pasale el comentario que generas con el input de arriba
+          />
+        </View>
       </SafeAreaView>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  subCard: {
+    backgroundColor: "#d5e1f1",
+    marginTop: 10,
+  },
+  send: {
+    width: "22%",
+    height: "60%",
+    backgroundColor: "#7aa9ff",
+    borderRadius: 10,
+    justifyContent:"center"
+  },
+  sendButton: {
+    color: "black",
+    textAlign: "center",
+    fontWeight: "600",
+  },
   newComment: {
     height: 150,
     width: "90%",
@@ -83,11 +105,18 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginTop: 5,
   },
+  h2: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginLeft: 20,
+    marginTop: 10,
+  },
   cardInput: {
     width: "85%",
-    height: "55%",
+    height: "75%",
     alignSelf: "center",
     marginTop: 10,
+    flexDirection: "row",
   },
   Input: {
     backgroundColor: "#d5e1f1",
@@ -97,10 +126,12 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     paddingLeft: 10,
     color: "grey",
+    marginRight: 10,
   },
   commentTitle: {
     fontSize: 20,
     alignSelf: "center",
+    fontWeight: "500",
   },
   latestComment: {
     height: 200,
@@ -121,6 +152,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     backgroundColor: "#f4f6f6",
     borderBottomWidth: 0,
+    marginBottom:10
   },
   header_title: {
     fontSize: 20,
@@ -155,7 +187,6 @@ const styles = StyleSheet.create({
   photoContainer: {
     width: "100%",
     height: 240,
-    marginBottom: 10,
   },
   picture: {
     alignSelf: "center",

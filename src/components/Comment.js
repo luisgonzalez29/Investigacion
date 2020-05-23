@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   card: {
     width: "90%",
     height: 250,
-    backgroundColor: "#d5e1f1",
+    backgroundColor: "#bacde9",
     marginVertical: 15,
     alignSelf: "center",
     borderRadius: 25,
@@ -52,9 +52,10 @@ const styles = StyleSheet.create({
     width: "85%",
     height: "55%",
     alignSelf: "center",
-    backgroundColor:"#bed0ea",
+    backgroundColor:"#d5e1f1",
     marginTop: 10,
-    borderRadius:20
+    borderRadius:20,
+    paddingLeft:10
   },
   card_title: {
     fontSize: 25,
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
     justifyContent:"center",
   },
   card_subtitle: {
-    fontSize: 15,
+    fontSize: 20,
     fontStyle: "italic",
     color: "black",
     textAlign: "left",
