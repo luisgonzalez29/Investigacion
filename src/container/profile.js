@@ -17,8 +17,8 @@ class Profile extends React.PureComponent {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <StatusBar backgroundColor={"#f4f6f6"} />
         <Header style={styles.header}>
+        <StatusBar backgroundColor={"#f4f6f6"} />
           <View style={styles.left}>
           <TouchableOpacity style={{width:"100%", height:"100%", top:2}}>
               <Image

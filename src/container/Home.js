@@ -10,15 +10,15 @@ import {
 } from "react-native";
 import Card from "../components/Cards";
 import { Header, Image } from "native-base";
-
 class Home extends React.PureComponent {
   render() {
     // const { navigation } = this.props;
     // const {navigate} = navigation;
     return (
       <SafeAreaView style={styles.container}>
-        <StatusBar backgroundColor={"#f4f6f6"}/>
+      
         <Header style={styles.header}>
+        <StatusBar backgroundColor={"#f4f6f6"}/>
           <View style={styles.left}>{/* <Image/> */}</View>
           <View style={styles.middle}>
             <Text style={styles.header_title}>Listado de Usuarios</Text>
@@ -83,6 +83,7 @@ class Home extends React.PureComponent {
 
             />
           </TouchableOpacity>
+         
           <View style={{height:60}}/>
         </ScrollView>
       </SafeAreaView>
