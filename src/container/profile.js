@@ -10,7 +10,7 @@ import {
   Image,
 } from "react-native";
 import { Header,} from "native-base";
-import Form from "../components/Form";
+import Form from "../components/form";
 import MaterialInitials from "react-native-material-initials/native";
 
 class Profile extends React.PureComponent {

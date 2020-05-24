@@ -10,7 +10,7 @@ import {
   Image,
 } from "react-native";
 import { Header, Input } from "native-base";
-import Comment from "../components/Comment";
+import Comment from "../components/comment";
 import MaterialInitials from "react-native-material-initials/native";
 
 class Forum extends React.PureComponent {

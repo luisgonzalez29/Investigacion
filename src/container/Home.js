@@ -8,7 +8,7 @@ import {
   Text,
   StatusBar,
 } from "react-native";
-import Card from "../components/Cards";
+import Card from "../components/cards";
 import { Header, Image } from "native-base";
 class Home extends React.PureComponent {
   render() {
