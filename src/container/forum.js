@@ -36,7 +36,7 @@ class Forum extends React.PureComponent {
           <MaterialInitials
             style={styles.picture}
             backgroundColor={"#7aa9ff"} //aqui tienes que pasarle el color de fondo de la pantalla de inicio
-            color={"black"} //aqui tienes que pasarle el color del texto de la pantalla de inicio
+            color={"white"} //aqui tienes que pasarle el color del texto de la pantalla de inicio
             size={100}
             text={"Luis Gonzalez"} //aqui tienes que pasarle el nombre de la pantalla de inicio
             single={false}
