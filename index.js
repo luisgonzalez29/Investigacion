@@ -4,7 +4,7 @@
 
 //import 'react-native-gesture-handler';
 import {AppRegistry} from 'react-native';
-import App from './src/container/App';
+import Home from './src/container/Home';
 import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => Home);
